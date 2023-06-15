@@ -1,12 +1,279 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
+
+<html>
+  <head>
+    <title>Scrolling Text on Image</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="icon-wrapper">
+        <div class="icon">co-afl</div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#">co-aflとは</a></li>
+          <li><a href="#">実績</a></li>
+          <li><a href="#">メンバー</a></li>
+          <li><a href="#">よくある質問</a></li>
+          <li><a href="#">大学紹介</a></li>
+          <li><a href="#">企業様へ</a></li>
+        </ul>
+      </nav>
+      <div class="openbtn"><span></span><span></span><span></span></div>
+    </header>
+    <main>
+      <div id="particles-js"></div>
+      <div id="wrapper">
+        <div class="main">
+          <div class="main-image">
+            <h1>co-afl</h1>
+            <h2 class="TextTyping">Technology × Business</h2>
+          </div>
+
+          <div class="main-contents-wrapper">
+            <div class="main-content-textbox">
+              <div class="main-content-title">
+                最高の経験から最強の自分をつくる
+              </div>
+              <div class="main-content-text">
+                私たちco-aflは主にビジネスコンテスト、競技プログラミング、WEB開発の3つの活動を行っています。大学の講義だけでは身に着けられない技術や知識を身に着け、即戦力な人材を目指しています
+              </div>
+              <a href="#">
+                <button class="main-content-button">詳しくはこちら</button>
+              </a>
+            </div>
+            <div class="main-content-slider">
+              <!-- Slider main container -->
+              <div class="swiper main-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="assets/images/mobile_app_developer.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/programmingpng.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/images/web.png" alt="" />
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="activities">
+          <div class="activities-image">
+            <h1>Activities</h1>
+          </div>
+          <div class="activities-contents">
+            <div class="business contents">
+              <div class="business-image contents-image"></div>
+              <div class="business-info contents-info">
+                <div class="business-title contents-title">
+                  ビジネスコンテスト
+                </div>
+                <div class="business-text contents-text">
+                  <p>
+                    ビジネスコンテストを通してビジネス戦略、企画力、問題解決能力を鍛えます
+                    活動内容、実績、作成した資料などはこちらをご覧ください
+                  </p>
+                </div>
+                <a href="#">
+                  <button class="business-button contents-button">
+                    詳しくはこちら
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="programming contents">
+              <div class="programming-info contents-info">
+                <div class="programming-title contents-title">
+                  競技プログラミング
+                </div>
+                <div class="programming-text contents-text">
+                  <p>競技プログラミング部門は、</p>
+                </div>
+                <a href="#">
+                  <button class="programming-button contents-button">
+                    詳しくはこちら
+                  </button>
+                </a>
+              </div>
+              <div class="programming-image contents-image"></div>
+            </div>
+            <div class="web contents">
+              <div class="web-image contents-image"></div>
+              <div class="web-info contents-info">
+                <div class="web-title contents-title">WEB開発</div>
+                <div class="web-text contents-text">
+                  <p>
+                    WEB開発部門では、主にCo-aflのホームページ作成・運営、WEB系の言語の勉強を行っています。
+                  </p>
+                </div>
+                <a href="#">
+                  <button class="web-button contents-button">
+                    詳しくはこちら
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news">
+          <div class="news-title">
+            <h2>News</h2>
+          </div>
+          <div class="news-contents">
+            <div class="news-slider">
+              <div class="swiper news-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/mobile_app_developer.jpg"
+                      alt=""
+                      class="news-image"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/programmingpng.png"
+                      alt=""
+                      class="news-image"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="assets/images/web.png"
+                      alt=""
+                      class="news-image"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="news1">
+              <div class="news-textbox">
+                <div class="news-content-title">賞をいただきました</div>
+                <div class="news-content-text">
+                  ビジネスコンテストで木口さんが賞をいただきました
+                </div>
+                <a href="#">
+                  <button class="news-content-button">詳しくはこちら</button>
+                </a>
+              </div>
+            </div>
+            <div class="news2">
+              <div class="news-textbox">
+                <div class="news-content-title">高橋さん</div>
+                <div class="news-content-text">
+                  ビジネスコンテストで高橋さんが賞をいただきました
+                </div>
+                <a href="#">
+                  <button class="news-content-button">詳しくはこちら</button>
+                </a>
+              </div>
+            </div>
+            <div class="news3">
+              <div class="news-textbox">
+                <div class="news-content-title">ゆきひと</div>
+                <div class="news-content-text">
+                  ビジネスコンテストでゆきひとさんが賞をいただきました
+                </div>
+                <a href="#">
+                  <button class="news-content-button">詳しくはこちら</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="member">
+          <div class="member-title">
+            <h2>Member</h2>
+          </div>
+		  
+          <div class="team-member-wrapper">
+            <div class="team-member">
+              <img src="assets/images/noAvatar.png" alt="メンバー1の写真" />
+              <h2>メンバー1</h2>
+              <p class="position">役職1</p>
+              <p class="description">メンバー1のプロフィールの簡単な説明</p>
+              <a href="">
+                <button class="details-btn">詳細を見る</button>
+              </a>
+            </div>
+
+            <div class="team-member">
+              <img src="assets/images/noAvatar.png" alt="メンバー2の写真" />
+              <h2>メンバー2</h2>
+              <p class="position">役職2</p>
+              <p class="description">メンバー2のプロフィールの簡単な説明</p>
+              <a href="">
+                <button class="details-btn">詳細を見る</button>
+              </a>
+            </div>
+            <div class="team-member">
+              <img src="assets/images/noAvatar.png" alt="メンバー2の写真" />
+              <h2>メンバー3</h2>
+              <p class="position">役職3</p>
+              <p class="description">メンバー3のプロフィールの簡単な説明</p>
+              <a href="">
+                <button class="details-btn">詳細を見る</button>
+              </a>
+            </div>
+          </div>
+          <a href="">
+            <div class="view-all">
+              <button>すべてのメンバーを見る</button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+	<footer>
+		<div class="footer-content">
+			<h3>Company Name</h3>
+			<p>© 2023 Company Name. All rights reserved.</p>
+			<ul class="socials">
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">LinkedIn</a></li>
+			</ul>
+		</div>
+	</footer>	
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="geometry.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
