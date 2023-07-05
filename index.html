@@ -35,55 +35,52 @@
     <main>
       <div id="particles-js"></div>
       <div id="wrapper">
-        <div class="main">
-          <div class="main-image">
-            <h1>co-afl</h1>
-            <h2 class="TextTyping">Technology × Business</h2>
-          </div>
-
-          <div class="main-contents-wrapper">
-            <div class="main-content-textbox">
-              <div class="main-content-title">
-                最高の経験から最強の自分をつくる
-              </div>
-              <div class="main-content-text">
-                私たちco-aflは主にビジネスコンテスト、競技プログラミング、WEB開発の3つの活動を行っています。大学の講義だけでは身に着けられない技術や知識を身に着け、即戦力な人材を目指しています
-              </div>
-              <a href="#">
-                <button class="main-content-button">詳しくはこちら</button>
-              </a>
+        <div class="main-top">
+          <h1>co-afl</h1>
+          <h2 class="TextTyping">Technology × Business</h2>
+        </div>
+        <div class="main-contents-wrapper">
+          <div class="main-content-textbox">
+            <div class="main-content-title">
+              最高の経験から最強の自分をつくる
             </div>
-            <div class="main-content-slider">
-              <!-- Slider main container -->
-              <div class="swiper main-swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide">
-                    <img src="assets/images/mobile_app_developer.jpg" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/images/programmingpng.png" alt="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/images/web.png" alt="" />
-                  </div>
+            <div class="main-content-text">
+              私たちco-aflは主にビジネスコンテスト、競技プログラミング、WEB開発の3つの活動を行っています。大学の講義だけでは身に着けられない技術や知識を身に着け、即戦力な人材を目指しています
+            </div>
+            <a href="#">
+              <button class="main-content-button">詳しくはこちら</button>
+            </a>
+          </div>
+          <div class="main-content-slider">
+            <!-- Slider main container -->
+            <div class="swiper main-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="assets/images/mobile_app_developer.jpg" alt="" />
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
+                <div class="swiper-slide">
+                  <img src="assets/images/programmingpng.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/web.png" alt="" />
+                </div>
               </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
             </div>
           </div>
         </div>
         <div class="activities">
-          <div class="activities-image">
+          <div class="activities-title">
             <h1>Activities</h1>
           </div>
           <div class="activities-contents">
@@ -215,7 +212,6 @@
           <div class="member-title">
             <h2>Member</h2>
           </div>
-		  
           <div class="team-member-wrapper">
             <div class="team-member">
               <img src="assets/images/noAvatar.png" alt="メンバー1の写真" />
@@ -226,7 +222,6 @@
                 <button class="details-btn">詳細を見る</button>
               </a>
             </div>
-
             <div class="team-member">
               <img src="assets/images/noAvatar.png" alt="メンバー2の写真" />
               <h2>メンバー2</h2>
@@ -254,17 +249,55 @@
         </div>
       </div>
     </main>
-	<footer>
-		<div class="footer-content">
-			<h3>Company Name</h3>
-			<p>© 2023 Company Name. All rights reserved.</p>
-			<ul class="socials">
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">LinkedIn</a></li>
-			</ul>
-		</div>
-	</footer>	
+    <footer>
+      <d iv class="footer-container">
+        <div class="footer-section">
+          <h3>サークル情報</h3>
+          <p>サークル名: co-afl</p>
+          <p>創設年: 2022</p>
+          <p>メール: example@example.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>SNS</h3>
+          <ul>
+            <li><a href="http://www.facebook.com/yourcircle">Facebook</a></li>
+            <li><a href="http://www.twitter.com/yourcircle">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>リンク</h3>
+          <ul>
+            <li><a href="/privacy">プライバシーポリシー</a></li>
+            <li>
+              <a href="http://www.youruniversity.jp">大学のウェブサイト</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <div class="footer-contact">
+            <h3>お問い合わせ</h3>
+            <form action="#" method="POST">
+              <input type="text" name="name" placeholder="お名前" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="メールアドレス"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="お問い合わせ内容"
+                required
+              ></textarea>
+              <button type="submit">送信</button>
+            </form>
+          </div>
+        </div>
+      </d>
+      <div class="footer-bottom">
+        <p>&copy; 2023 co-afl</p>
+      </div>
+    </footer>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="geometry.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

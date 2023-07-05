@@ -42,13 +42,11 @@ const newsSwiper = new Swiper(".news-swiper", {
   scrollbar: {
     el: ".swiper-scrollbar",
   },
-
-  
 });
 
-newsSwiper.on("slideChangeTransitionEnd",function(){
+newsSwiper.on("slideChangeTransitionEnd", function () {
   const activeSlideIndex = newsSwiper.realIndex; // Get the index of the active slide
-  
+
   // Show or hide news elements based on the active slide index
   const news1 = document.querySelector(".news1");
   const news2 = document.querySelector(".news2");
@@ -67,17 +65,16 @@ newsSwiper.on("slideChangeTransitionEnd",function(){
   } else if (activeSlideIndex === 2) {
     news3.style.display = "block";
   }
-})
-
+});
 
 //ハンバーガーメニュー
-document.querySelector('.openbtn').addEventListener('click', function() {
-  this.classList.toggle('active');
+document.querySelector(".openbtn").addEventListener("click", function () {
+  this.classList.toggle("active");
 });
 
 //テキストタイピング
 function TextTypingAnime() {
-  const textTypingElements = document.querySelectorAll('.TextTyping');
+  const textTypingElements = document.querySelectorAll(".TextTyping");
 
   textTypingElements.forEach(function (element) {
     const elemPos = element.offsetTop - 50;
@@ -91,34 +88,34 @@ function TextTypingAnime() {
         const time = 100;
         // 時差で表示するためにdelayを指定し、時間後にfadeInで表示させる
         setTimeout(function () {
-          child.style.display = 'inline';
+          child.style.display = "inline";
         }, time * i);
       });
     } else {
       thisChild = element.children;
       Array.from(thisChild).forEach(function (child) {
-        child.style.display = 'none'; // span要素を非表示にする
+        child.style.display = "none"; // span要素を非表示にする
       });
     }
   });
 }
 
 // 画面をスクロールしたら動かしたい場合の記述
-window.addEventListener('scroll', function () {
+window.addEventListener("scroll", function () {
   TextTypingAnime(); // アニメーション用の関数を呼ぶ
 });
 
 // 画面が読み込まれたらすぐに動かしたい場合の記述
-window.addEventListener('load', function () {
-  const textTypingElements = document.querySelectorAll('.TextTyping');
+window.addEventListener("load", function () {
+  const textTypingElements = document.querySelectorAll(".TextTyping");
 
   textTypingElements.forEach(function (element) {
     const text = element.innerHTML;
-    let textbox = '';
+    let textbox = "";
 
     Array.from(text).forEach(function (t) {
-      if (t !== ' ') {
-        textbox += '<span>' + t + '</span>';
+      if (t !== " ") {
+        textbox += "<span>" + t + "</span>";
       } else {
         textbox += t;
       }
@@ -132,31 +129,30 @@ window.addEventListener('load', function () {
 
 //main-contents-wrapperを下から表示
 function showMainContents() {
-  var mainContents = document.querySelector('.main-contents-wrapper');
+  var mainContents = document.querySelector(".main-contents-wrapper");
   var elemPos = mainContents.getBoundingClientRect().top;
   var windowHeight = window.innerHeight;
   var triggerPoint = windowHeight / 1.3;
 
   if (elemPos - triggerPoint <= 0) {
-    mainContents.classList.add('show');
+    mainContents.classList.add("show");
   }
 }
 
-window.addEventListener('scroll', showMainContents);
-window.addEventListener('load', showMainContents);
+window.addEventListener("scroll", showMainContents);
+window.addEventListener("load", showMainContents);
 
-//activities-imageを下から表示
+//activities-titleを下から表示
 function showActivities() {
-  var mainContents = document.querySelector('.activities-image');
+  var mainContents = document.querySelector(".activities-title");
   var elemPos = mainContents.getBoundingClientRect().top;
   var windowHeight = window.innerHeight;
   var triggerPoint = windowHeight / 1.5;
 
   if (elemPos - triggerPoint <= 0) {
-    mainContents.classList.add('show');
+    mainContents.classList.add("show");
   }
 }
 
-window.addEventListener('scroll', showActivities);
-window.addEventListener('load', showActivities);
-
+window.addEventListener("scroll", showActivities);
+window.addEventListener("load", showActivities);
