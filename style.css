@@ -128,7 +128,7 @@ nav ul li a:hover {
 .main-top h1 {
     color: black;
     /* color: white; */
-    font-size: 64px;
+    font-size: 120px;
     font-family: 'Abel', sans-serif;
 }
 
@@ -143,6 +143,7 @@ nav ul li a:hover {
 
 .TextTyping span {
     display: none;
+    font-size: 40px;
 }
 
 
