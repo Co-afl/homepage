@@ -69,8 +69,12 @@ newsSwiper.on("slideChangeTransitionEnd", function () {
 
 //ハンバーガーメニュー
 document.querySelector(".openbtn").addEventListener("click", function () {
+  const overlay = document.getElementById("navOverlay");
+  
   this.classList.toggle("active");
+  overlay.classList.toggle("active");
 });
+
 
 //テキストタイピング
 function TextTypingAnime() {
